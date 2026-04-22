@@ -188,12 +188,12 @@ function ChatbotPanel({ className }: ChatbotPanelProps) {
   }
 
   return (
-    <section
-      className={cn(
-        "panel fade-up relative overflow-hidden rounded-[2rem] border border-[--line] bg-[linear-gradient(180deg,rgba(26,20,43,0.95),rgba(14,10,24,0.98))] text-[--ink-800]",
-        className
-      )}
-    >
+      <section
+        className={cn(
+          "panel fade-up relative flex h-full min-h-0 flex-col overflow-hidden rounded-[2rem] border border-[--line] bg-[linear-gradient(180deg,rgba(26,20,43,0.95),rgba(14,10,24,0.98))] text-[--ink-800]",
+          className
+        )}
+      >
       <div className="relative border-b border-[--line] bg-[linear-gradient(135deg,rgba(255,183,106,0.1),rgba(126,167,255,0.05))] px-5 py-4 md:px-6">
         <div className="flex items-center justify-between gap-3">
           <div className="flex items-center gap-3">
@@ -223,11 +223,11 @@ function ChatbotPanel({ className }: ChatbotPanelProps) {
         </div>
       </div>
 
-      <div className="relative p-4 md:p-5">
+      <div className="relative flex min-h-0 flex-1 flex-col p-4 md:p-5">
         <div className="absolute inset-0 z-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,157,87,0.03)_0%,transparent_60%)]" aria-hidden="true" />
-        <div className="relative z-10 flex min-h-[24rem] flex-col rounded-[1.5rem] border border-[--line] bg-[rgba(12,8,22,0.6)] p-4 shadow-[inset_0_0_40px_rgba(0,0,0,0.5)] md:p-4">
+        <div className="relative z-10 flex h-full min-h-0 flex-col rounded-[1.5rem] border border-[--line] bg-[rgba(12,8,22,0.6)] p-4 shadow-[inset_0_0_40px_rgba(0,0,0,0.5)] md:p-4">
           <div
-            className="flex-1 space-y-4 overflow-y-auto pr-1"
+            className="min-h-0 flex-1 space-y-4 overflow-y-auto pr-1"
             role="log"
             aria-live="polite"
             aria-relevant="additions text"
